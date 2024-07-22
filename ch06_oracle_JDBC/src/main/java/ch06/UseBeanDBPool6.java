@@ -27,7 +27,7 @@ public class UseBeanDBPool6 {
 				bean.setDept_name(rs.getString("dept_name"));
 				alist.add(bean);
 			}
-		} catch (Exception e) {
+		} catch (Exception e) {	
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {

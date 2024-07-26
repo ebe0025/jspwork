@@ -1,0 +1,111 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    * {
+        background-color: rgba(192, 247, 137, 0.703);
+    }
+
+    #regTable{
+        width: 800px;
+        border-collapse: collapse;
+    }
+    #회원가입{
+        text-align: center;
+        background-color: darkgreen;
+        color: white;
+    }
+    #buttons{
+        text-align: center;
+    }
+
+</style>
+
+</head>
+<body>
+    <table border="1" id="regTable">
+        <tr>
+            <th colspan="3" id="회원가입">회원가입</th>
+        </tr>
+        <tr>
+            <td>아이디 </td><br>
+            <td><input type="text" name="id"><button onclick="checkID();">ID중복확인</button></td>
+            <td>영문과 숫자로만 입력</td>
+        </tr>
+        <tr>
+            <td>패스워드 </td>
+            <td><input type="password" name="pwd"></td>
+            <td>특수기호,영문,숫자가 각 1개 이상씩 들어가야 되고 8글자 이상</td>
+        </tr>
+        <tr>
+            <td>패스워드 확인</td>
+            <td><input type="password" name="repwd"></td>
+            <td>위의 비밀번호를 한번 더 넣으세요</td>
+        </tr>
+        <tr>
+            <td>이름</td>
+            <td><input type="text" name="name"></td>
+            <td>한글로 입력</td>
+        </tr>
+        <tr>
+            <td>성별</td>
+            <td>
+                <input type="radio" name="gender">남&emsp;
+                <input type="radio" name="gender">여
+            </td>
+            <td>성별을 선택해 주세요</td>
+        </tr>
+        <tr>
+            <td>생년월일</td>
+            <td><input type="text" name="birthday"></td>
+            <td>6글자로 입력 ex) 190315</td>
+        </tr>
+        <tr>
+            <td>E-mail</td>
+            <td><input type="email" name="email"></td>
+            <td>ex) email@naver.com</td>
+        </tr>
+        <tr>
+            <td>우편번호</td>
+            <td><input type="" name="zipcode"></td>
+            <td>우편번호를 검색하세요</td>
+        </tr>
+        <tr>
+            <td>주소</td>
+            <td><input type="text" name="address1"><br><input type="text" name="address2"></td>
+            <td>상세주소가 있으면 입력해주세요</td>
+        </tr>
+        <tr>
+            <td>취미</td>
+            <td>
+                <input type="checkbox" name="hobby" value="internet">인터넷 
+                <input type="checkbox" name="hobby" value="travel">여행
+                <input type="checkbox" name="hobby" value="game">게임
+                <input type="checkbox" name="hobby" value="movie">영화
+                <input type="checkbox" name="hobby" value="sport">운동
+            </td>
+            <td>취미를 선택하세요</td>
+        </tr>
+        <tr>
+            <td>직업</td>
+            <td>
+        
+            </td>
+            <td>직업을 선택하세요</td>
+        </tr>
+        <tr>
+            <td colspan="3" id="buttons"> 
+                <button>회원가입</button>
+                <button>다시쓰기</button>
+                <button>로그인</button>
+            </td>
+        </tr>
+    </table>
+     
+
+</body>
+</html>

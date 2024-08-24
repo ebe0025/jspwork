@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link href="../resources/css/index.css" rel="stylesheet">
 <style>
 	#buttons{
 		text-align: center;
@@ -12,6 +13,7 @@
 </style>
 </head>
 <body>
+
 <%
 	String id = (String)session.getAttribute("idKey");
 	if(id != null){

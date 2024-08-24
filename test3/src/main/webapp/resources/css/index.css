@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+
+.container {    
+	width: 1000px;             
+    padding: 20px;   
+    position: relative; 
+    margin: 0 auto;
+}
+
+.navgation {
+    top: 20px; /* 사진의 상단에서 20px 아래로 위치 */
+    right: 20px; /* 사진의 오른쪽 끝에서 20px 안쪽에 위치 */
+    z-index: 2; 
+}
+.bgImg {
+	width: 1000px;
+	margin-top: 10px; 
+}
+

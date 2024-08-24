@@ -32,6 +32,6 @@
 			return one + two;
 		}
 	%>
-	one과 two의 합은? <%=plusMethod(3) %><br>
+	one과 two의 합은? <%=plusMethod(5) %><br>
 </body>
 </html>

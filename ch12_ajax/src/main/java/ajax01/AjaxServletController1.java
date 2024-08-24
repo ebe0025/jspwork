@@ -19,7 +19,8 @@ public class AjaxServletController1 extends HttpServlet {
 		String responseDate = "입력한 값 : " + str + ", 길이 : " + str.length();
 		
 		// 응답데이터 돌려주기
-		response.setContentType("text/html; charset=utf-8");
+		response.setContentType("text/json; charset=utf-8");
 		response.getWriter().print(responseDate);
+		
 	}
 }
